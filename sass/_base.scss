@@ -1,3 +1,10 @@
+// SASS varibles
+$bp_largest: 75em; // 1200px
+$bp_large: 68.75em; // 1100px
+$bp_medium: 56.25em; // 900px;
+$bp_small: 37.5em; // 600px;
+$bp_smallest: 31.25em; // 500px;
+
 // Custom CSS variables
 :root {
   --color-primary: #eb2f64;
@@ -35,6 +42,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px 10px/16px (browser default) = 62.5%
+
+  @media only screen and (max-width: $bp_large) {
+    font-size: 50%;
+  }
 }
 
 body {
